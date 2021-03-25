@@ -10,8 +10,9 @@
 - hosts: all
   gather_facts: no
   ignore_errors: yes
-  #become: true
-  become_method: sudo
+  become: true
+  become_method: su
+  become_user: root
   tasks:
     - name: Include the example role
       include_role:
