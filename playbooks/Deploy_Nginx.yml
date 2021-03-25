@@ -12,4 +12,4 @@
   tasks:
     - name: Include the example role
       include_role:
-        name: nginx
+        name: nginxinc.nginx
