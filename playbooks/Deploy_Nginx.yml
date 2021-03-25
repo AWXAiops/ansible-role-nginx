@@ -10,10 +10,10 @@
 - hosts: all
   gather_facts: no
   ignore_errors: yes
-  become: true
   #become_method: sudo
   #become_user: root
   tasks:
     - name: Include the example role
       include_role:
         name: nginxinc.nginx
+      become: true
