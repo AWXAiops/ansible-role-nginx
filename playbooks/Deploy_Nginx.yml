@@ -11,7 +11,7 @@
   gather_facts: no
   ignore_errors: yes
   become: true
-  become_method: sudo
+  #become_method: sudo
   become_user: root
   tasks:
     - name: Include the example role
